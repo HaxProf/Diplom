@@ -84,10 +84,10 @@
     left: 83%;
     transform: rotateZ(360deg);
   }
-  @media screen and (max-width: 400px){
-	&__open {
-		left: 80%;
-	  }
+  @media screen and (max-width: 400px) {
+    &__open {
+      left: 80%;
+    }
   }
 }
 
@@ -96,7 +96,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+
     @media screen and (max-width: 1780px) {
       flex-direction: column;
       margin: 0;
