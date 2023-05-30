@@ -505,7 +505,7 @@ a {
     right: 0;
     background-color: #fff;
     z-index: 100;
-    min-width: 350px;
+    min-width: 300px;
     -webkit-transform: translateX(100%);
         -ms-transform: translateX(100%);
             transform: translateX(100%);
