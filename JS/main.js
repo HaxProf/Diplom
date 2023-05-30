@@ -1,5 +1,10 @@
-$(".header__burger").on("click", function (e) {
+$(".burger, .overlay").on("click", function (e) {
     e.preventDefault();
-    $(".header__nav").toggleClass("header__nav--open");
-	$(".overlay").toggleClass("overlay--active");
+    $(".header").toggleClass("header__open");
+	$(".overlay").toggleClass("overlay--show");
   });
+  $(".burger, .overlay").on("click", function (e) {
+    e.preventDefault();
+    $(".burger").toggleClass("burger__open");
+  });
+ 
