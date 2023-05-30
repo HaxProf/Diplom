@@ -213,6 +213,7 @@ a {
 }
 
 .header__inner {
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

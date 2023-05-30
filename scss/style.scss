@@ -93,6 +93,7 @@
 
 .header {
   &__inner {
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -312,8 +313,6 @@
         width: 26px;
         height: 26px;
       }
-    }
-    @media screen and (max-width: 1090px) {
     }
   }
 
