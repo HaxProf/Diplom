@@ -4,6 +4,11 @@
 @import "vars"; // переменные
 @import "mixins"; // миксины
 /*=========================================================================*/
+body {
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
 .wrapper {
   min-height: 100%;
   width: 100%;
@@ -90,8 +95,17 @@
     }
   }
 }
-
+.heading {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 104.19%;
+  color: #1a3444;
+}
+/*=====================================================*/
 .header {
+  margin-bottom: 40px;
   &__inner {
     margin-top: 40px;
     display: flex;
@@ -361,9 +375,137 @@
   }
 }
 
-.logo {
-}
+/*==========================Consultation===========================*/
 .main {
+  &__consultation {
+    background: url("../images/background/background.jpg") 0 0 /100% no-repeat;
+    @media screen and (max-width: 1780px) {
+      background: url("../images/background/background.jpg") 100% 100% / cover
+        no-repeat;
+    }
+    @media screen and (max-width: 650px) {
+      background: none;
+    }
+  }
 }
-.footer {
+.consultation {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    padding: 140px 0 140px 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: stretch;
+    min-height: 100%;
+    max-width: 390px;
+    flex: 1 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 18px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #4e4e4e;
+  }
+
+  &__heading {
+    margin-bottom: 18px;
+    max-width: 335px;
+  }
+
+  &__subtitle {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #6f6f6f;
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: 18px 50px;
+    background: #38bcea;
+    border-radius: 3px;
+    font-family: "Roboto";
+    font-size: 20px;
+    line-height: 23px;
+    color: #ffffff;
+    white-space: nowrap;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+    @media screen and (max-width: 340px) {
+      padding: 18px 30px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 870px) {
+      display: none;
+    }
+  }
+  &__bottom-item {
+    margin-right: 10px;
+    padding: 40px 40px 0 50px;
+    position: relative;
+
+    font-size: 18px;
+    line-height: 21px;
+    color: #4b4b4b;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(9.5px);
+    &:first-child {
+      max-width: 350px;
+    }
+    &:nth-child(2) {
+      max-width: 280px;
+    }
+
+    &:last-child {
+      max-width: 280px;
+    }
+    &:first-child::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 70%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 45px;
+      height: 45px;
+      background: url("../images/icons/doctor-icon.svg") 0 0/100% no-repeat;
+    }
+    &:nth-child(2)::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 70%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 45px;
+      height: 45px;
+      background: url("../images/icons/chair-icon.svg") 0 0/100% no-repeat;
+    }
+    &:last-child::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 70%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 45px;
+      height: 45px;
+      background: url("../images/icons/location-icon.svg") 0 0/100% no-repeat;
+    }
+  }
 }
