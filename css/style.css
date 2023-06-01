@@ -166,9 +166,8 @@ body {
 @media screen and (max-width: 1780px) {
   .burger {
     position: fixed;
-    top: 50px;
-    right: 50%;
-    left: 50%;
+    top: 3%;
+    right: 3%;
     z-index: 150;
     width: 60px;
     height: 60px;
@@ -207,7 +206,6 @@ body {
   }
 }
 .burger__open {
-  left: 83%;
   -webkit-transform: rotateZ(360deg);
       -ms-transform: rotate(360deg);
           transform: rotateZ(360deg);
@@ -633,6 +631,7 @@ body {
 }
 @media screen and (max-width: 340px) {
   .consultation__btn {
+    display: inline-block;
     padding: 18px 30px;
   }
 }

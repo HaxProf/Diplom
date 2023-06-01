@@ -55,9 +55,9 @@ body {
 .burger {
   @media screen and (max-width: 1780px) {
     position: fixed;
-    top: 50px;
-    right: 50%;
-    left: 50%;
+    top: 3%;
+    right: 3%;
+
     z-index: 150;
     width: 60px;
     height: 60px;
@@ -86,7 +86,6 @@ body {
     }
   }
   &__open {
-    left: 83%;
     transform: rotateZ(360deg);
   }
   @media screen and (max-width: 400px) {
@@ -442,6 +441,7 @@ body {
       transform: scale(1.1);
     }
     @media screen and (max-width: 340px) {
+      display: inline-block;
       padding: 18px 30px;
     }
   }
