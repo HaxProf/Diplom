@@ -102,7 +102,9 @@ body {
   line-height: 104.19%;
   color: #1a3444;
 }
-/*=====================================================*/
+/*==========================header===========================*/
+/*==========================header===========================*/
+
 .header {
   margin-bottom: 40px;
   &__inner {
@@ -375,6 +377,7 @@ body {
 }
 
 /*==========================Consultation===========================*/
+/*==========================Consultation===========================*/
 .main {
   &__consultation {
     background: url("../images/background/background.jpg") 0 0 /100% no-repeat;
@@ -511,9 +514,11 @@ body {
 }
 
 /*==========================Services===========================*/
+/*==========================Services===========================*/
 .main {
   &__services {
     margin-top: 80px;
+    margin-bottom: 120px;
   }
 }
 .services {
@@ -692,5 +697,107 @@ body {
     @media screen and (max-width: 550px) {
       margin: 0 auto;
     }
+  }
+}
+
+/*==========================confidence===========================*/
+/*==========================confidence===========================*/
+.main {
+  &__confidence {
+    padding: 125px 0 125px 0;
+    background: #fbfbfb;
+  }
+}
+.confidence {
+  &__heading {
+    font-family: "Panton";
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #272727;
+    margin-bottom: 60px;
+	@media screen and (max-width: 450px) {
+		text-align: center;
+	  }
+  }
+
+  &__content-inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1645px;
+    width: 100%;
+    @media screen and (max-width: 1350px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__content-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 1 33.333%;
+    padding: 60px 0 60px 40px;
+    margin-right: 40px;
+    max-width: 525px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 4px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    @media screen and (max-width: 1350px) {
+      margin-right: 0;
+      margin-bottom: 40px;
+      flex: 1 0 33.333%;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__content-number {
+    font-family: "Panton";
+    font-size: 48px;
+    line-height: 58px;
+    color: #38bcea;
+    margin-bottom: 8px;
+	@media screen and (max-width: 450px) {
+		font-size: 36px;
+	  }
+  }
+
+  &__content-title {
+    font-family: "Panton";
+    font-weight: 700;
+    max-width: 420px;
+    width: 100%;
+    font-size: 36px;
+    line-height: 44px;
+    color: #222222;
+    margin-bottom: 8px;
+	@media screen and (max-width: 450px) {
+		font-size: 28px;
+	  }
+  }
+
+  &__content-subtitle {
+    font-family: "Arial";
+    font-size: 24px;
+    line-height: 28px;
+    color: #292929;
+	@media screen and (max-width: 450px) {
+		font-size: 18px;
+	  }
+  }
+  &__content-subtitle--1 {
+    max-width: 390px;
+  }
+  &__content-subtitle--2 {
+    max-width: 410px;
+  }
+  &__content-subtitle--3 {
+    max-width: 440px;
   }
 }
