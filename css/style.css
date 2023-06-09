@@ -1204,10 +1204,11 @@ body {
   padding: 20px 30px;
   border-radius: 5px;
   margin-right: 20px;
-  font-size: 24px;
+  font-size: 20px;
   max-width: 230px;
   min-width: 230px;
   width: 100%;
+  white-space: nowrap;
 }
 .form__unput::-webkit-input-placeholder {
   font-family: "Arial";
