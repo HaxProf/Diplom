@@ -69,3 +69,29 @@ $(document).ready(function () {
     element8.scrollIntoView({ block: "center", behavior: "smooth" });
   });
 });
+$(document).ready(function () {
+  $(".advantages__slider").slick({
+    arrows: false,
+    infinite: true,
+    slidesToShow: 1,
+    speed: 1000,
+    adaptiveHeight: true,
+    variableWidth: true,
+    draggable: false,
+    responsive: [
+      {
+        breakpoint: 1679,
+        settings: {},
+      },
+    ],
+  });
+
+  $(".advantages__arrow-left").on("click", function (e) {
+    e.preventDefault();
+    $(".advantages__slider").slick("slickPrev");
+  });
+  $(".advantages__arrow-right").on("click", function (e) {
+    e.preventDefault();
+    $(".advantages__slider").slick("slickNext");
+  });
+});
