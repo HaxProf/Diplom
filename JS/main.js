@@ -95,3 +95,47 @@ $(document).ready(function () {
     $(".advantages__slider").slick("slickNext");
   });
 });
+$(document).ready(function () {
+	$(".certificate__slider").slick({
+	  arrows: false,
+	  slidesToShow: 3,
+	  speed: 1000,
+	  draggable: false,
+	  responsive: [
+		{
+			breakpoint: 1770,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				infinite: true,
+				dots: false
+			}
+		},
+		{
+			breakpoint: 1290,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		},
+		{
+			breakpoint: 1140,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		},
+	  ],
+	});
+  
+	$(".certificate__arrow-prev").on("click", function (e) {
+	  e.preventDefault();
+	  $(".certificate__slider").slick("slickPrev");
+	});
+	$(".certificate__arrow-next").on("click", function (e) {
+	  e.preventDefault();
+	  $(".certificate__slider").slick("slickNext");
+	});
+  });
+
+
