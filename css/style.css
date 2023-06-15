@@ -781,6 +781,11 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media screen and (max-width: 1140px) {
+  .services__tabs-items2 {
+    margin: 0;
+  }
+}
 @media screen and (max-width: 850px) {
   .services__tabs-items2 {
     -webkit-box-pack: center;
@@ -857,6 +862,21 @@ body {
 }
 .services__tabs-link:active::after {
   display: none;
+}
+@media screen and (max-width: 1379px) {
+  .services__tabs-link {
+    margin: 0 10px 20px 0px;
+  }
+}
+@media screen and (max-width: 549px) {
+  .services__tabs-link {
+    margin: 0 10px 10px 0px;
+  }
+}
+@media screen and (max-width: 549px) {
+  .services__tabs-link {
+    margin: 0 10px 10px 0px;
+  }
 }
 .services__tabs-icon {
   margin-bottom: 30px;

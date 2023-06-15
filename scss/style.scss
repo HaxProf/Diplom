@@ -565,6 +565,9 @@ body {
     margin-top: 65px;
     width: 100%;
     flex-wrap: wrap;
+    @media screen and (max-width: 1140px) {
+      margin: 0;
+    }
     @media screen and (max-width: 850px) {
       justify-content: center;
     }
@@ -580,7 +583,6 @@ body {
     height: 100%;
     max-height: 229px;
     max-width: 250px;
-
     background: #fbfbfb;
     border-radius: 5px;
     padding: 40px 40px 80px 40px;
@@ -627,6 +629,15 @@ body {
     }
     &:active::after {
       display: none;
+    }
+    @media screen and (max-width: 1379px) {
+      margin: 0 10px 20px 0px;
+    }
+    @media screen and (max-width: 549px) {
+      margin: 0 10px 10px 0px;
+    }
+    @media screen and (max-width: 549px) {
+      margin: 0 10px 10px 0px;
     }
   }
 
