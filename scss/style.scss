@@ -26,7 +26,7 @@ body {
   opacity: 0;
   transition: all 0.3s;
 }
-.overlay--active {
+.overlay--show {
   visibility: visible;
   opacity: 1;
 }
@@ -35,29 +35,11 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 50;
-  background: rgba(0, 0, 0, 0.7);
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s;
-}
-
-.overlay--show {
-  visibility: visible;
-  opacity: 1;
-}
 .burger {
   @media screen and (max-width: 1780px) {
     position: fixed;
     top: 3%;
     right: 3%;
-
     z-index: 150;
     width: 60px;
     height: 60px;
@@ -118,8 +100,6 @@ body {
       margin: 0;
       align-items: center;
     }
-    @media screen and (max-width: 1090px) {
-    }
   }
 
   &__logo {
@@ -131,8 +111,6 @@ body {
         height: 65px;
       }
     }
-    @media screen and (max-width: 1090px) {
-    }
   }
 
   &__socials {
@@ -140,8 +118,6 @@ body {
     margin-right: 60px;
     @media screen and (max-width: 1780px) {
       margin: 0 0 20px 0;
-    }
-    @media screen and (max-width: 1090px) {
     }
   }
 
@@ -248,10 +224,7 @@ body {
         height: 30px;
       }
     }
-    @media screen and (max-width: 1090px) {
-    }
   }
-
   &__adress-text {
     font-size: 15px;
     line-height: 17px;
@@ -260,10 +233,8 @@ body {
       font-size: 20px;
     }
   }
-
   &__time {
     margin-right: 60px;
-
     white-space: nowrap;
     padding-left: 35px;
     position: relative;
@@ -271,7 +242,6 @@ body {
     font-size: 15px;
     line-height: 18px;
     color: #12354b;
-
     &::before {
       content: "";
       display: block;
@@ -309,7 +279,6 @@ body {
     font-size: 18px;
     line-height: 22px;
     color: #3c3c3c;
-
     &::before {
       content: "";
       display: block;
@@ -349,14 +318,12 @@ body {
       padding: 18px 35px;
       font-size: 20px;
     }
-    @media screen and (max-width: 1090px) {
-    }
   }
   @media screen and (max-width: 1780px) {
     & {
       position: fixed;
       top: 0;
-      bottom: 0;
+      height: 100vh;
       right: 0;
       background-color: #fff;
       z-index: 100;
@@ -1591,7 +1558,7 @@ body {
     top: 55%;
     right: 0;
     transform: translateX(50%);
-    z-index: 100;
+    z-index: 80;
     &::after {
       content: "";
       display: block;
@@ -1639,7 +1606,7 @@ body {
     top: 55%;
     left: 0;
     transform: translateX(-125%);
-    z-index: 100;
+    z-index: 80;
     &::after {
       content: "";
       display: block;
